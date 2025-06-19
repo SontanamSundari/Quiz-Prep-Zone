@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">Quiz Prep Zone</h1>
+        <div class="option">
+                <h3 class="category">Select Category</h3>
+                <div class="options">
+                    <button data-category="Programming">Programming</button>
+                    <button data-category="General Knowledge">General Knowledge</button>
+                    <button data-category="Riddles">Riddles</button>
+                    <button data-category="Science">Science</button>
+                </div>
+        </div>
+        <div class="quesno">
+            <h3 class="questions">Select No Of Questions</h3>
+            <div class="quesopt">
+                <button>5</button>
+                <button>10</button>
+                <button>15</button>
+            </div>
+        </div>
+        <div class="start">
+            <button>Start Quiz</button>
+        </div>
+    </div>
+    <div class="quiz-container">
+        <header class="quiz-head">
+                <h2>Quiz Application</h2>
+        </header>
+        <div class="quiz-content">
+            <h1 class="question-text">In Java Script, how do you create function?</h1>
+            <ul class="ans-opts">
+                <li class="ans-opt">
+                    <p>create function myFunction()</p>
+                </li>
+                <li class="ans-opt incorrect" >
+                    <p>def function myFunction()</p>
+                </li>
+                <li class="ans-opt correct">
+                    <p>function myFunction()</p>
+                </li>
+                <li class="ans-opt">
+                    <p>func  myFunction()</p>
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-footer">
+            <button class="next-btn">Next</button>
+        </div>
+    </div>
+    <div class="result-container">
+        <h2 class="result-title">Quiz Completed!</h2>
+        <p class="result-mess">You Got <b>3</b> out of <b>5</b> Correct. </p>
+        <p class="result-mess1">Great Effort!</p>
+        <button class="try-btn">Try again</button>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
